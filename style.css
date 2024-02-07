@@ -1,14 +1,13 @@
 :root {
-  --pink: #f14e95;
+  --pink: #d59ab4;
   --bg: #0a0a0a;
   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
-  --shadoww: 0 2px 2px rgb(0 0 0 / 0.9);
 }
 
 body {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
-  /* min-height: 4000px; */
+  background-color: #164863;
 }
 
 .hero::before {
@@ -18,11 +17,11 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(img/wedding.jpeg);
+  background-image: url(img/background.png);
   background-size: cover;
   background-position: center;
   z-index: -1;
-  filter: grayscale(1);
+  /* filter: grayscale(1); */
 }
 
 .hero {
@@ -34,8 +33,8 @@ body {
 .hero h1,
 .hero h4,
 .hero p {
-  text-shadow: var(--shadoww);
-  color: #fdaf95;
+  text-shadow: var(--shadow);
+  color: #def2fd;
 }
 
 .hero h1 {
@@ -54,14 +53,14 @@ body {
 }
 
 .hero a {
-  color: #fdaf95;
-  background-color: gray;
+  color: #427d9d;
+  background-color: #def2fd;
   box-shadow: var(--shadow);
 }
 
 .hero a:hover {
-  background-color: #fdaf95;
-  color: black;
+  background-color: #def2fd;
+  color: #427d9d;
 }
 
 .mynavbar {
@@ -85,7 +84,7 @@ body {
 }
 
 .home {
-  background-color: #fed9ed;
+  background-image: url(img/mempelai&gift.png);
   background-size: cover;
   min-height: 100vh;
   margin-top: -6rem;
@@ -95,7 +94,7 @@ body {
 
 .home h2,
 .gifts h2 {
-  color: var(--pink);
+  color: #164863;
   font-family: "Sacramento";
   font-size: 5rem;
   font-weight: bold;
@@ -103,21 +102,21 @@ body {
 
 .info h2,
 .rsvp h2 {
-  color: #67729d;
+  background-image: url(img/date&rsvp.png);
   font-family: "Sacramento";
   font-size: 5rem;
   font-weight: bold;
 }
 
 .home h3 {
-  color: #444;
+  color: #427d9d;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
 .home p {
   font-size: 1.1rem;
-  color: #666;
+  color: #427d9d;
 }
 
 .home .couple {
@@ -127,7 +126,7 @@ body {
 .home .couple h3 {
   font-family: "sacramento";
   font-size: 2.4rem;
-  color: var(--pink);
+  color: #164863;
 }
 
 .home .couple img {
@@ -150,10 +149,15 @@ body {
   margin: auto;
   color: var(--pink);
 }
+.kosong {
+  color: #164863;
+  padding: 10rem;
+  padding-bottom: 8rem;
+}
 
 .info {
-  background-color: #bb9cc0;
-  color: white;
+  background-image: url(img/date&rsvp.png);
+  color: #def2fd;
   padding-top: 10rem;
   padding-bottom: 8rem;
 }
@@ -170,11 +174,11 @@ body {
 .info .card {
   background-color: rgba(255, 255, 255, 0.2) !important;
   color: white !important;
-  border: 1px solid #999;
+  border: 1px solid #164863;
 }
 
 .info .card-header {
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #164863;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 }
@@ -184,19 +188,21 @@ body {
 }
 
 .info .card-footer {
-  border-top: 1px solid #999;
+  border-top: 1px solid #164863;
   font-size: 0.9rem;
   font-weight: 300;
 }
 
 .rsvp,
-.gifts {
+.gifts,
+.arrum {
   padding-top: 10rem;
   padding-bottom: 8rem;
 }
 
-.gifts {
-  background-color: #fed9ed;
+.gifts,
+.arrum {
+  background-image: url(img/mempelai&gift.png);
 }
 
 .gifts span {
@@ -312,10 +318,11 @@ body {
 }
 
 .rsvp {
-  background-color: #bb9cc0;
+  background-image: url(img/date&rsvp.png);
 }
 
 .rsvp h2 {
+  color: #def2fd;
   font-size: 4.5rem;
 }
 
@@ -328,21 +335,26 @@ body {
 }
 
 .rsvp button {
-  background-color: #67729d;
+  background-color: #164863;
   color: white;
-  border: 1px solid #67729d;
+  border: 1px solid #164863;
 }
 
 .rsvp button:hover {
   background-color: white;
-  color: #67729d;
+  color: #164863;
   border: 1px solid white;
+}
+
+.arrum {
+  font-family: cursive;
+  color: #164863;
 }
 
 footer {
   padding: 3rem;
-  background-color: #67729d;
-  color: white;
+  background-color: #164863;
+  color: #def2fd;
 }
 
 footer a {
